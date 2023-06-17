@@ -9,45 +9,47 @@
   </head>
   <body>
     <header class="pb-20">
-      <div class="w-3/5 mx-auto flex items-center h-20">
-        <img class="h-6 pr-14" src="img/logo.svg" alt="" />
-        <nav>
-          <ul class="flex">
-            <li class="pr-4"><a href="news">NEWS</a></li>
-            <li class="pr-4"><a href="about">ABOUT</a></li>
-            <li class="pr-4"><a href="business">BUSINESS</a></li>
-            <li class="pr-4"><a href="company">COMPANY</a></li>
-          </ul>
-        </nav>
-        <a class="ml-auto" href="#">お問い合わせ</a>
+      <div class="flex items-center h-20">
+        <div class="w-11/12 md:w-3/5 mx-auto md:flex md:items-center">
+          <img class="h-6 md:pr-14" src="img/logo.svg" alt="" />
+          <nav>
+            <ul class="flex justify-between">
+              <li class="pr-4"><a href="news">NEWS</a></li>
+              <li class="pr-4"><a href="about">ABOUT</a></li>
+              <li class="pr-4"><a href="business">BUSINESS</a></li>
+              <li class="pr-4"><a href="company">COMPANY</a></li>
+            </ul>
+          </nav>
+        </div>
+        <a class="hidden md:block bg-black text-white h-full" href="#">お問い合わせ</a>
       </div>
       <img
-        class="h-[calc(100vh-5rem)] w-screen object-cover"
+        class="h-[calc(100vh-5rem)] w-full object-cover"
         src="img/mainvisual.jpg"
         alt=""
       />
     </header>
     <main>
-      <div class="w-1/2 mx-auto pb-36" id="news">
-        <div class="pb-20">
+      <div class="w-11/12 md:w-1/2 mx-auto pb-16 md:pb-36" id="news">
+        <div class="pb-10 md:pb-20">
           <h2 class="text-4xl tracking-widest pb-2">NEWS</h2>
           <p class="pb-8">ニュース</p>
           <div class="w-[36px] border-b-2 border-black"></div>
         </div>
-        <div class="flex">
-          <div class="border-r-[1px] border-black pr-36">
+        <div class="md:flex">
+          <div class="pb-8 md:border-r-[1px] md:border-black md:pr-36">
             <p class="pb-4">
               2021.01.01<span class="bg-black text-white ml-4">NEWS</span>
             </p>
             <p>タイトルタイトルタイトルタイトル</p>
           </div>
-          <div class="border-r-[1px] border-black pl-4 pr-36">
+          <div class="pb-8 md:border-r-[1px] md:border-black md:pl-4 md:pr-36">
             <p class="pb-4">
               2021.01.01<span class="bg-black text-white ml-4">PRESS</span>
             </p>
             <p>タイトルタイトルタイトルタイトル</p>
           </div>
-          <div class="pl-4">
+          <div class="md:pl-4">
             <p class="pb-4">
               2021.01.01<span class="bg-black text-white ml-4">NEWS</span>
             </p>
@@ -56,11 +58,11 @@
         </div>
       </div>
       <div class="pb-36" id="about">
-        <div class="flex items-center">
-          <div class="w-1/2 pb-20 order-2">
+        <div class="flex flex-col md:flex-row md:items-center">
+          <div class="w-11/12 mx-auto md:w-1/2 pb-20 order-2">
             <h2 class="text-4xl tracking-widest pb-2">ABOUT</h2>
             <p class="pb-8">私たちについて</p>
-            <div class="w-[36px] border-b-2 border-black mb-20"></div>
+            <div class="w-[36px] border-b-2 border-black mb-10 md:mb-20"></div>
             <p>
               テキストテキストテキストテキストテキストテキスト
               テキストテキストテキストテキストテキストテキスト<br />
@@ -71,39 +73,84 @@
             </p>
           </div>
           <img
-            class="w-1/2 object-cover order-1 pr-12"
+            class="w-full md:w-1/2 object-cover order-1 md:pr-12 pb-8"
             src="img/about.jpg"
             alt=""
           />
         </div>
       </div>
-      <div class="w-1/2 mx-auto pb-36" id="business">
-        <div class="pb-20">
+      <div class="w-11/12 md:w-1/2 mx-auto pb-36" id="business">
+        <div class="pb-10 md:pb-20">
           <h2 class="text-4xl tracking-widest pb-2">BUSINESS</h2>
           <p class="pb-8">事業内容</p>
           <div class="w-[36px] border-b-2 border-black"></div>
         </div>
+        <div class="pb-8">
+          <p class="pb-2">- Web制作・マーケティング</p>
+          <img src="img/business1.jpg" alt="">
+        </div>
+        <div class="pb-8">
+          <p class="pb-2">- インターネットメディア事業</p>
+          <img src="img/business2.jpg" alt="">
+        </div>
+        <div class="pb-8">
+          <p class="pb-2">- プロモーション企画・制作</p>
+          <img src="img/business3.jpg" alt="">
+        </div>
+        <div class="pb-8">
+          <p class="pb-2">- ソーシャル企画・運営</p>
+          <img src="img/business4.jpg" alt="">
+        </div>
       </div>
-      <div class="w-1/2 mx-auto pb-36" id="company">
-        <div class="pb-20">
+      <div class="w-11/12 md:w-1/2 mx-auto pb-36" id="company">
+        <div class="pb-10 md:pb-20">
           <h2 class="text-4xl tracking-widest pb-2">COMPANY</h2>
           <p class="pb-8">会社情報</p>
           <div class="w-[36px] border-b-2 border-black"></div>
         </div>
+        <div>
+          <p class="pb-4">
+            会社名<br>
+            　ウェブエンターテイメント株式会社
+          </p>
+          <p class="pb-4">
+            所在地<br>
+            　東京都渋谷区桜丘町99-9 West Building 3F
+          </p>
+          <p class="pb-4">
+            代表<br>
+            　XXXXXX
+          </p>
+          <p class="pb-4">
+            設立<br>
+            　2021年1月1日
+          </p>
+          <p class="pb-4">
+            資本金<br>
+            　3,000,000円
+          </p>
+          <p>
+            事業内容<br>
+            　Web制作・マーケティング<br>
+            　インターネットメディア事業<br>
+            　プロモーション企画・制作<br>
+            　ソーシャル企画・運営
+          </p>
+        </div>
       </div>
     </main>
-    <footer class="w-1/2 mx-auto">
-        <div class="flex justify-between items-center pb-4">
-            <img class="h-6" src="img/logo.svg" alt="">
-            <p>
-                Web Entertainment Design Inc.<br>
-                West Building 3F<br>
-                9-99 Sakuragaokacho Shibuya-ku<br>
-                TOkyo, Japan 150-0031<br>
-                T/99-9999-9999
-            </p>
-        </div>
-        <small>&copy; Web Entertainment Design Inc.</small>
+    <footer class="w-11/12 md:w-1/2 mx-auto">
+      <div class="md:flex md:justify-between md:items-center pb-4">
+        <img class="h-6 mb-2" src="img/logo.svg" alt="" />
+        <p>
+          Web Entertainment Design Inc.<br />
+          West Building 3F<br />
+          9-99 Sakuragaokacho Shibuya-ku<br />
+          Tokyo, Japan 150-0031<br />
+          T/99-9999-9999
+        </p>
+      </div>
+      <small class="py-4">&copy; Web Entertainment Design Inc.</small>
     </footer>
   </body>
 </html>
